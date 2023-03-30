@@ -323,7 +323,7 @@ for i, params in enumerate(parameters.iloc):
         # metrics = deepcopy(empty_metric)
         metricsP = deepcopy(empty_metric)
         time_r = [[]]
-        techniques = [my_explainers.berty]
+        techniques = [my_explainers.cake_explainer]
         for ind in tqdm(range(0, len(test_texts))):
             torch.cuda.empty_cache()
             test_rational = deepcopy(final_rationales[ind])

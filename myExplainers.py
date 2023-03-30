@@ -118,7 +118,7 @@ class MyExplainer:
 			label_interpretations.append(sentences_weights)
 		return [label_sentences, label_interpretations]
 
-	def berty(self, instance, prediction, tokens, mask, attention, hidden_states):
+	def cake_explainer(self, instance, prediction, tokens, mask, attention, hidden_states):
 		interpretations = []
 		instance_ids = self.tokenizer(instance, truncation=True, padding=True)['input_ids']
 		# return keyphrases and weights for every label
